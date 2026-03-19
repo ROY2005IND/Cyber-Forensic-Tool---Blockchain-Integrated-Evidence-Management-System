@@ -89,7 +89,7 @@ class BlockchainHandler:
             signed_txn = self.account.sign_transaction(transaction)
             
             # Send transaction
-            tx_hash = self.w3.eth.send_raw_transaction(signed_txn.raw_transaction)
+            tx_hash = self.w3.eth.send_raw_transaction(signed_txn.rawTransaction)
             
             print(f"[*] Transaction sent: {tx_hash.hex()}")
             print("[*] Waiting for confirmation...")
@@ -149,7 +149,7 @@ class BlockchainHandler:
             })
             
             signed_txn = self.account.sign_transaction(transaction)
-            tx_hash = self.w3.eth.send_raw_transaction(signed_txn.raw_transaction)
+            tx_hash = self.w3.eth.send_raw_transaction(signed_txn.rawTransaction)
             
             tx_receipt = self.w3.eth.wait_for_transaction_receipt(tx_hash, timeout=120)
             
