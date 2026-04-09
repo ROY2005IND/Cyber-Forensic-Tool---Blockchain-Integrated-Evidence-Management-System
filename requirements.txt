@@ -1,3 +1,16 @@
-pip install flask web3 python-dotenv psutil requests
-pip install eth-account groq
-pip install flask-cors
+Flask==2.3.3
+flask-cors==4.0.0
+
+web3==6.15.1
+eth-account==0.10.0
+eth-utils==2.3.1
+eth-keys==0.4.0
+eth-keyfile==0.6.1
+
+pydantic==1.10.13
+typing-extensions==4.9.0
+
+requests==2.31.0
+python-dotenv==1.0.1
+
+psutil==5.9.8
