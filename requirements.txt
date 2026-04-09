@@ -1,0 +1,3 @@
+pip install flask web3 python-dotenv psutil requests
+pip install eth-account groq
+pip install flask-cors
